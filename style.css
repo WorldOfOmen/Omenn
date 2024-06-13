@@ -172,7 +172,7 @@ button {
     font-style: oblique;
     margin-left: 10px;
 }
-@media (max-width: 600px) {
+@media (max-width: 770px) {
     #lo {
         background-color: #4D869C;
         display: block;
