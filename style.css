@@ -172,3 +172,94 @@ button {
     font-style: oblique;
     margin-left: 10px;
 }
+@media (max-width: 600px) {
+    #lo {
+        background-color: #4D869C;
+        display: block;
+        padding: 10px;
+    }
+
+    #s {
+        background-color: #4D869C;
+        /* position: absolute; */
+        /* top: 10px; */
+    /* right: 10px; */
+    /* margin-right: 7px; */
+        display: inline-block;
+        margin-left: calc(100% - 370px);
+        color: white;
+        font-size: larger;
+        font-style: inherit;
+        font-display: none;
+        /* display: flex; */
+        justify-content: center;
+        align-items: center;
+        
+
+    }
+
+    nav {
+        /* display: flex; */
+        display: inline-block;
+        flex-direction: column;
+        align-items: flex-end;
+    }
+
+    nav a {
+        margin-bottom: 10px;
+    }
+
+    #temel > div {
+        margin-bottom: 20px;
+    }
+
+    #temel h2 {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    #temel h2 i {
+        margin-bottom: 10px;
+    }
+
+    #form form {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    #back {
+        background-color: #6295A2;
+        height: auto;
+        padding: 20px;
+    }
+
+    #Works, #About, #Options {
+        text-align: center;
+        height: auto;
+        width: 100%;
+        margin-bottom: 20px;
+        position: relative;
+        left: auto;
+        top: auto;
+        transform: none;
+    }
+    
+    #Works, #About, #Options {
+        display: block;
+        margin: 20px 0;
+    }
+    #form label,
+    #form input,
+    #form button {
+        display: block;
+        margin: 10px auto;
+        text-align: center;
+    }
+    #forme {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        height: 100vh;
+    }
+    
+}
