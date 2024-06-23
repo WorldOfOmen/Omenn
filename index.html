@@ -4,22 +4,45 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Araba Şikayet Formu</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <h2>Araba Şikayet Formu</h2>
-    <form id="arabaForm" action="http://localhost:3000/submit" method="POST">
-        <label for="araba_modeli">Araba Modeli:</label><br>
-        <input type="text" id="araba_modeli" name="araba_modeli" required><br><br>
+    <header>
+        <div>
+            <a href="#" id="logo">GENÇLER OTO</a>
+        <nav>
+            <ul class="nav__items">
+                <li><a href="" id="nav__item">Adresimiz</a></li>
+                <li><a href="" id="nav__item">Hakkımızda</a></li>
+                <li><a href="" id="nav__item">İletişim</a></li>
+                <li><a href="" id="nav__item">Şikayet</a></li>
+            </ul>
+        </nav>
+        </div>
+    </header>
+    <div>
+        <img src="araba.jpg" alt="">
+    </div>
+    <div id="navige">
+        <h3><li id="yonlendirici">Adresimiz</li></h3>
+        <h3><li id="yonlendirici">Hakkımızda</li></h3>
+        <h3><li id="yonlendirici">İletişim</li></h3>
+    </div>
+    <section id="form">
+        <h1><i class="fas fa-phone"></i></h1>
+        <h1 id="bilgi">Contact</h1>
+        <form action="http://127.0.0.1:3000/submit" method="POST">
+            <label for="araba_modeli">Araba Modeli:</label><br>
+            <input type="text" id="araba_modeli" name="araba_modeli" required><br><br>
 
-        <label for="araba_sikayeti">Araba Şikayeti:</label><br>
-        <textarea id="araba_sikayeti" name="araba_sikayeti" rows="4" cols="50" required></textarea><br><br>
+            <label for="araba_sikayeti">Araba Şikayeti:</label><br>
+            <textarea id="araba_sikayeti" name="araba_sikayeti" rows="4" cols="50" required></textarea><br><br>
 
-        <label for="telefon_numarasi">Telefon Numarası:</label><br>
-        <input type="tel" id="telefon_numarasi" name="telefon_numarasi" pattern="[0-9]{10}" required><br><br>
+            <label for="telefon_numarasi">Telefon Numarası:</label><br>
+            <input type="tel" id="telefon_numarasi" name="telefon_numarasi" pattern="[0-9]{10}" required><br><br>
 
-        <input type="submit" value="Gönder">
-    </form>
-
-    <script src="script.js"></script>
+            <input type="submit" value="Gönder">
+         </form>
+    </section>
 </body>
 </html>
